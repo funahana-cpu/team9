@@ -2,7 +2,10 @@
 
 [ext_resource type="Script" uid="uid://wtcnsqp8n6dp" path="res://my_world.gd" id="1_ms5cr"]
 [ext_resource type="Texture2D" uid="uid://cu8r7k323oo07" path="res://img/MyWorld.jpg" id="2_cery3"]
-[ext_resource type="PackedScene" uid="uid://c4evgsrgxssxn" path="res://apple.tscn" id="3_cery3"]
+[ext_resource type="PackedScene" uid="uid://txpdsqrh32qk" path="res://hanako.tscn" id="3_1u75a"]
+[ext_resource type="PackedScene" uid="uid://lnb6otiwxfys" path="res://taro.tscn" id="3_cery3"]
+[ext_resource type="PackedScene" uid="uid://dnftpk8p6wpc6" path="res://orange.tscn" id="4_asled"]
+[ext_resource type="PackedScene" uid="uid://c4evgsrgxssxn" path="res://apple.tscn" id="6_ildj8"]
 
 [node name="MyWorld" type="Node2D" unique_id=1137961271]
 script = ExtResource("1_ms5cr")
@@ -19,5 +22,14 @@ offset_bottom = 23.0
 theme_override_font_sizes/font_size = 64
 text = "ラベル"
 
-[node name="Apple" parent="." unique_id=1239789849 instance=ExtResource("3_cery3")]
-position = Vector2(636, 329)
+[node name="HANAKO" parent="." unique_id=400989248 instance=ExtResource("3_1u75a")]
+position = Vector2(147, 217)
+
+[node name="ORANGE" parent="." unique_id=1920362574 instance=ExtResource("4_asled")]
+position = Vector2(427, 288)
+
+[node name="TARO" parent="." unique_id=1017901413 instance=ExtResource("3_cery3")]
+position = Vector2(117, 212)
+
+[node name="Apple" parent="." unique_id=1239789849 instance=ExtResource("6_ildj8")]
+position = Vector2(669, 345)
