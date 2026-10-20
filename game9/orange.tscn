@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dnftpk8p6wpc6"]
+
+[ext_resource type="PackedScene" uid="uid://bpyevpyu03sxt" path="res://actor.tscn" id="1_aoevm"]
+[ext_resource type="Script" uid="uid://dygngv287wm4q" path="res://orange.gd" id="2_6mxjk"]
+[ext_resource type="Texture2D" uid="uid://h5cwtyhfqt34" path="res://img/ORANGE.png" id="2_wskhw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gp2by"]
+radius = 24.020824
+
+[node name="ORANGE" unique_id=1239789849 instance=ExtResource("1_aoevm")]
+script = ExtResource("2_6mxjk")
+
+[node name="Sprite2D" parent="." index="0" unique_id=712688549]
+texture = ExtResource("2_wskhw")
+
+[node name="CollisionShape2D" parent="." index="1" unique_id=881902376]
+shape = SubResource("CircleShape2D_gp2by")
